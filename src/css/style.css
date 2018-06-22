@@ -1,0 +1,45 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 200px;
+    padding: 15px;
+    display: flex;
+    border: 1px solid #ccc;
+}
+
+.box1,
+.box2,
+.box3,
+.box4 {
+    flex: 1;
+}
+
+.one,
+.two,
+.three,
+.four {
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+li {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    color: #000;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+}
+
+li.active {
+    background: skyblue;
+    color: #fff;
+}

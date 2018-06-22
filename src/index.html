@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="js/lib/require.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <input type="text" placeholder="组件/Data/Tag标签">
+    <div class="box">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+        <div class="box4"></div>
+    </div>
+    <script type="text/x-handlebars-template" class="first">
+        <ul class="one">
+            {{#each this}}
+            <li add="{{kpId}}">{{kpName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" class="second">
+        <ul class="two">
+            {{#each this}}
+            <li add="{{kpId}}">{{kpName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" class="third">
+        <ul class="three">
+            {{#each this}}
+            <li add="{{kpId}}">{{kpName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script type="text/x-handlebars-template" class="fourth">
+        <ul class="four">
+            {{#each this}}
+            <li add="{{kpId}}">{{kpName}}</li>
+            {{/each}}
+        </ul>
+    </script>
+    <script>
+        require(['./js/main'], function() {
+            require(['index'])
+        })
+    </script>
+</body>
+
+</html>
